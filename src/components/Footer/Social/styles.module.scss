@@ -1,0 +1,23 @@
+@use '../../../styles/mixins.scss' as mix;
+
+.container {
+  @include mix.flexColumnHorizontalCenter;
+  gap: 3em;
+}
+
+.title {
+  @include mix.h5(#FFFFFF);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  gap: 1em;
+}
+
+@media (max-width: 748px) {
+  .container {
+    gap: 1em;
+  }
+}

@@ -1,0 +1,31 @@
+@use '../../../styles/mixins.scss' as mix;
+
+.container {
+  @include mix.flexColumnHorizontalCenter;
+  background: #2C3154;
+  padding: 1.5em;
+}
+
+.copirightt {
+  @include mix.flexCenter;
+  @include mix.h5(#808080);
+  text-transform: capitalize;
+  gap: 0.3em;
+}
+
+.copirighttBolt {
+  @include mix.flexCenter;
+  @include mix.h5(#FFFFFF);
+  text-transform: capitalize;
+}
+
+@media (max-width: 748px) {
+  .copirightt {
+  font-size: .8em;
+  }
+  
+  .copirighttBolt {
+
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,34 @@
+@use './styles/mixins.scss' as mix;
+@use './styles/fonts.scss';
+@use '~scss-reset/reset';
+
+* {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #766fa1;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-left: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #2f10c8;
+  }
+}
+
+body {
+  @include mix.flexCenter;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5em;
+}
